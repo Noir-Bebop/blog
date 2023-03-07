@@ -1,0 +1,31 @@
+---
+// const platforms = ["Github", "Twitter", "Reddit"];
+// const platforms = ["Github", "Twitter", "Reddit"];
+// const username = "withastro";
+import Social from "./Social.astro";
+---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<footer>
+  <Social platform="twitter" username="astrobuild" />
+  <Social platform="github" username="astrobuildgit" />
+  <Social platform="youtube" username="astrobuildyt" />
+  <!-- <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+  <p>Conoce mis redes sociales:</p> -->
+  <!-- <ul class="redes-sociales">
+    {
+      platforms.map((platform) => (
+        <li>
+          <a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+        </li>
+      ))
+    }
+  </ul> -->
+</footer>
